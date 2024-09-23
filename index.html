@@ -64,6 +64,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      margin-bottom: 32px;
     }
 
     .heading h1 {
@@ -83,26 +84,112 @@
     .preparation-container {
       font-family: "Outfit Regular";
       background-color: #FFF7FB;
-      color: rgb(69, 69, 69);
+      padding: 15px 10px;
+      color: rgb(100, 100, 100);
+      border-radius: 10px;
+      margin-bottom: 25px;
     }
 
     .preparation-container h3 {
       color: #7A284E;
       font-size: 1.25rem;
+      margin-left: 21px;
     }
 
     .bold-title {
       font-weight: bold; 
       color: #554d46;
+
     }
 
     .preparation-container li {
       margin-bottom: 10px;
+      padding-left: 20px;
     }
+
 
     li::marker {
       color:#7A284E;
+      font-size: .8rem;
     }
+
+    .ingredients-container {
+      font-family: "Outfit Regular";
+      font-size: 1rem;
+      color: rgb(100, 100, 100);
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      margin-bottom: 25px;
+    }
+
+    .ingredients-container h2 {
+      font-family: "Young Serif";
+      font-weight: 400;
+      font-size: 1.75rem;
+      color: #854632; 
+    }
+
+    .ingredient-list {
+      padding-left: 20px;
+
+    }
+
+    .ingredient-list li {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .ingredient-list li::marker {
+      color: #854632;
+    }
+
+    .instructions-container {
+      font-family: "Outfit Regular";
+      font-size: 1rem;
+      max-width: 650px;
+      border-bottom: 1px solid rgb(221, 221, 221);
+      padding-bottom: 12px;
+      margin-bottom: 25px;
+    }
+
+    .instructions-container h2 {
+      font-family: "Young Serif";
+      font-weight: 400;
+      font-size: 1.75rem;
+    }
+
+    .instructions-container li {
+      margin-bottom: 10px;
+      padding-left: 15px;
+      color: rgb(100, 100, 100);
+      line-height: 150%;
+    }
+
+    .instructions-container li::marker {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .li-instruction {
+      font-weight: bold; 
+      color: #554d46;
+    }
+
+    .nutrition-container {
+      font-family: "Outfit Regular";
+      font-size: 1rem;
+      max-width: 650px;
+      color: rgb(100, 100, 100);
+    }
+
+    .nutrition-container h2 {
+      font-family: "Young Serif";
+      font-weight: 400;
+      font-size: 1.75rem;
+      color: #854632; 
+      margin-bottom: 12px;
+    }
+
 
   </style>
 </head>
@@ -122,6 +209,34 @@
       <li><span class="bold-title">Preparation:</span> 5 miutes</li>
       <li><span class="bold-title">Cooking:</span> 5 minutes</li>
     </ul>
+  </div>
+  <div class="ingredients-container">
+    <h2>Ingredients</h2>
+    <ul class="ingredient-list">
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+  </div>
+  <div class="instructions-container">
+    <h2>Instructions</h2>
+    <ol>
+      <li><span class="li-instruction">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+      <li><span class="li-instruction">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      <li><span class="li-instruction">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+      <li><span class="li-instruction">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle. sprinkle your chosen fillings over one half of the omelette.</li>
+      <li><span class="li-instruction">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li><span class="li-instruction">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+  </div>
+  <div class="nutrition-container">
+    <h2>Nutrition</h2>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+    <div class="nutrition-table">
+
+    </div>
   </div>
  </div> 
 </body>
