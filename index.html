@@ -4,194 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Recipe page</title>
-  <style>
-    @font-face {
-      font-family: "Young Serif";
-      font-weight: "Regular";
-      src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
-    }
-
-    @font-face {
-      font-family: "Outfit Semibold";
-      font-weight: "SemiBold";
-      src: url("assets/fonts/outfit/static/Outfit-SemiBold.ttf");
-    }
-
-    @font-face {
-      font-family: "Outfit Regular";
-      font-weight: "Regular";
-      src: url("assets/fonts/outfit/static/Outfit-Regular.ttf");
-    }
-  
-    @font-face {
-      font-family: "Outfit bold";
-      font-weight: "Bold";
-      src: url("assets/fonts/outfit/static/Outfit-Bold.ttf");
-    }
-
-    body {
-      display: flex;
-      margin: 0;
-      align-items: center;
-      justify-content: center;
-      background-color: #F3E5D7;
-      padding-top: 120px;
-    }
-
-    p, h1, h2, h3 {
-      margin: 0;
-    }
-
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      padding: 40px;
-      border-radius: 22px;
-    }
-
-    .image-container {
-      max-width: 650px;
-      margin-bottom: 20px;
-    }
-    .image-container img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
-
-    .heading {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 32px;
-    }
-
-    .heading h1 {
-      font-family: "Young Serif";
-      font-size: 2.5rem;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
-
-    .heading p {
-      font-family: "Outfit Regular";
-      font-size: 1rem;
-      max-width: 640px;
-      color: rgb(69, 69, 69);
-    }
-
-    .preparation-container {
-      font-family: "Outfit Regular";
-      background-color: #FFF7FB;
-      padding: 15px 10px;
-      color: rgb(100, 100, 100);
-      border-radius: 10px;
-      margin-bottom: 25px;
-    }
-
-    .preparation-container h3 {
-      color: #7A284E;
-      font-size: 1.25rem;
-      margin-left: 21px;
-    }
-
-    .bold-title {
-      font-weight: bold; 
-      color: #554d46;
-
-    }
-
-    .preparation-container li {
-      margin-bottom: 10px;
-      padding-left: 20px;
-    }
-
-
-    li::marker {
-      color:#7A284E;
-      font-size: .8rem;
-    }
-
-    .ingredients-container {
-      font-family: "Outfit Regular";
-      font-size: 1rem;
-      color: rgb(100, 100, 100);
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgb(221, 221, 221);
-      margin-bottom: 25px;
-    }
-
-    .ingredients-container h2 {
-      font-family: "Young Serif";
-      font-weight: 400;
-      font-size: 1.75rem;
-      color: #854632; 
-    }
-
-    .ingredient-list {
-      padding-left: 20px;
-
-    }
-
-    .ingredient-list li {
-      padding-left: 20px;
-      margin-bottom: 12px;
-    }
-
-    .ingredient-list li::marker {
-      color: #854632;
-    }
-
-    .instructions-container {
-      font-family: "Outfit Regular";
-      font-size: 1rem;
-      max-width: 650px;
-      border-bottom: 1px solid rgb(221, 221, 221);
-      padding-bottom: 12px;
-      margin-bottom: 25px;
-    }
-
-    .instructions-container h2 {
-      font-family: "Young Serif";
-      font-weight: 400;
-      font-size: 1.75rem;
-    }
-
-    .instructions-container li {
-      margin-bottom: 10px;
-      padding-left: 15px;
-      color: rgb(100, 100, 100);
-      line-height: 150%;
-    }
-
-    .instructions-container li::marker {
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    .li-instruction {
-      font-weight: bold; 
-      color: #554d46;
-    }
-
-    .nutrition-container {
-      font-family: "Outfit Regular";
-      font-size: 1rem;
-      max-width: 650px;
-      color: rgb(100, 100, 100);
-    }
-
-    .nutrition-container h2 {
-      font-family: "Young Serif";
-      font-weight: 400;
-      font-size: 1.75rem;
-      color: #854632; 
-      margin-bottom: 12px;
-    }
-
-
-  </style>
 </head>
 <body>
  <div class="main-container">
@@ -233,9 +47,24 @@
   </div>
   <div class="nutrition-container">
     <h2>Nutrition</h2>
-    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+    <p class="under-text">The table below shows nutritional values per serving without the additional fillings.</p>
     <div class="nutrition-table">
-
+      <div class="div-grid">
+        <p>Calories</p>
+        <p class="value">277kcal</p>
+      </div>
+      <div class="div-grid">
+        <p>Carbs</p>
+        <p class="value">0g</p>
+      </div>
+      <div class="div-grid">
+        <p>Protein</p>
+        <p class="value">20g</p>
+      </div>
+      <div class="div-grid-fat">
+        <p>Fat</p>
+        <p class="value">22g</p>
+      </div>
     </div>
   </div>
  </div> 
